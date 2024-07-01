@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  <link rel="stylesheet" href="./Css/all.min.css">
+  <link rel="stylesheet" href="./Css/bootstrap.min.css">
+  <link rel="stylesheet" href="./Css/style.css">
+  <title>Login</title>
+</head>
+<body>
+  
+  <div id="Firstpage" class="container text-center text-white my-5 d-block">
+    <div class="content w-75 m-auto p-5">
+      <h1>Smart Login System</h1>
+      <input id="SignInEmail" placeholder="Enter Your Email" class="form-control my-3" type="text">
+      <input id="SignInPassword" placeholder="Enter Your Password" class="form-control my-3" type="password">
+      <p class="text-danger d-none">All inputs are required</p>
+      <button id="login" class="btn btn-outline-info w-100 my-3">Login</button>
+      <p>Don’t have an account? <a id="signUpLetter">SignUp</a></p>
+    </div>
+
+
+  </div>
+  <div id="Middlepage" class="container text-center text-white my-5 d-none">
+    <div class="content w-75 m-auto p-5">
+      <h1>Smart Login System</h1>
+      <input id="userName" placeholder="Enter Your Name" class="form-control my-3" type="text">
+      <input id="SignInEmails" placeholder="Enter Your Email" class="form-control my-3" type="text">
+      <input id="SignInPasswords" placeholder="Enter Your Password" class="form-control my-3" type="password">
+      <p class="text-danger d-none error">Your inputs already exist with another user</p>
+      <p id="successfully" class="d-none text-success fs-3">You have registered successfully</p> 
+      <button id="signUpButton" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+      <p>You have an account? <a id="signIn">SignIn</a></p>
+    </div>
+
+
+  </div>
+  <div id="Secondpage" class="vh-100 text-center p-5 d-none flex-column justify-content-center align-items-center">
+    <h1 class="size mb-5">Welcome To Home Page User </h1>
+    <button id="logOut" class="btn btn-outline-info w-50 mt-5 my-3">Log Out</button>
+  </div>  
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/JS.js"></script>
+</body>
+</html>
